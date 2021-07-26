@@ -2,7 +2,7 @@
   "name": "ecosystem-api-client",
   "version": "1.0.0",
   "description": "api-client for ecosystem app",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,7 @@
     "module-alias": "^2.2.2"
   },
   "_moduleAliases": {
+    "$ecs-api-client": "src/app.js",
     "$ecs-api-client/http": "src/http",
     "$ecs-api-client/routes": "src/routes",
     "$ecs-api-client/controllers": "src/controllers",
