@@ -2,7 +2,7 @@
   "name": "ecosystem-api-client",
   "version": "1.0.0",
   "description": "api-client for ecosystem app",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
     "prepare": "npm run build",
     "build": "webpack --mode=production",
@@ -17,9 +17,6 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "babel-loader": "^8.2.2",
     "del-cli": "^4.0.1",
     "webpack": "^5.0.0-rc.6",
     "webpack-cli": "^4.0.0-rc.1"
