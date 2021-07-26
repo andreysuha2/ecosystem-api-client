@@ -1,11 +1,8 @@
-import Http from '@http/api/auth';
-
-
-export default (app) => {
-    app.get('/test', (req, res) => {
-        const http = new Http(req, res);
-        http.check()
-            .then(({ data }) => res.json({ data, http }))
-            .catch(({ data }) => res.json(data));
+export default (route) => {
+    route.group('auth', (route) => {
+       route.get('check', 'Authenticate/AuthController@check');
+       route.put('login', 'Authenticate/AuthController@login');
+       route.post('registration', 'Authenticate/AuthController@registration');
+       route.put('logout', 'Authenticate/AuthController@logout');
     });
-}
+};

@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         server: path.resolve(__dirname, "./src/app.js")
     },
+    devtool: 'source-map',
     output: {
         filename: "[name].js",
         path: __dirname + '/dist',
@@ -18,7 +19,8 @@ module.exports = {
             '@root': path.resolve(__dirname, "./src"),
             '@http': path.resolve(__dirname, "./src/http"),
             '@routes': path.resolve(__dirname, "./src/routes"),
-            '@core': path.resolve(__dirname, "./src/core")
+            '@core': path.resolve(__dirname, "./src/core"),
+            '@controllers': path.resolve(__dirname, "./src/controllers")
         }
     }
 };
