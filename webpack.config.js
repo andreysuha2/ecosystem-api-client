@@ -1,14 +1,18 @@
 const path = require('path');
 
 module.exports = {
+    target: 'node',
     entry: {
         server: path.resolve(__dirname, "./src/app.js")
     },
     output: {
         filename: "[name].js",
-        path: __dirname + '/dist'
+        path: __dirname + '/dist',
+        library: {
+            name: "EcosystemApiClient",
+            type: "umd"
+        }
     },
-    target: 'node',
     resolve: {
         alias: {
             '@root': path.resolve(__dirname, "./src"),
