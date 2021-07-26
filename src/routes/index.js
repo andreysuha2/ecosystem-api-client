@@ -1,4 +1,4 @@
-import Http from '$ecs-api-client/http/api/auth';
+import Http from '@http/api/auth';
 
 
 export default (app) => {

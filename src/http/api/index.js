@@ -1,4 +1,4 @@
-import Http from '$ecs-api-client/http';
+import Http from '@http';
 import interceptors from "./interceptors.config";
 const baseUrl = process.env.API_URL;
 

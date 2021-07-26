@@ -1,4 +1,4 @@
-import Http from '$ecs-api-client/http/api';
+import Http from '@http/api';
 
 class AuthHttp extends Http {
     constructor(req, res) {
