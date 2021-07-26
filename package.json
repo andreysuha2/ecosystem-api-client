@@ -1,5 +1,5 @@
 {
-  "name": "api-client",
+  "name": "ecosystem-api-client",
   "version": "1.0.0",
   "description": "api-client for ecosystem app",
   "main": "src/app.js",
