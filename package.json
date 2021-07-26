@@ -14,12 +14,5 @@
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "module-alias": "^2.2.2"
-  },
-  "_moduleAliases": {
-    "$ecs-api-client": "src/app.js",
-    "$ecs-api-client/http": "src/http",
-    "$ecs-api-client/routes": "src/routes",
-    "$ecs-api-client/controllers": "src/controllers",
-    "$ecs-api-client/core": "src/core"
   }
 }
