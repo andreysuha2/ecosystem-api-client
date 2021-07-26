@@ -4,7 +4,7 @@
   "description": "api-client for ecosystem app",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npm run buid",
+    "prepare": "npm run build",
     "build": "webpack --mode=production",
     "clear": "del-cli dist"
   },

@@ -16,14 +16,5 @@ module.exports = {
             '@routes': path.resolve(__dirname, "./src/routes"),
             '@core': path.resolve(__dirname, "./src/core")
         }
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: ["babel-loader"]
-            }
-        ]
     }
 };
