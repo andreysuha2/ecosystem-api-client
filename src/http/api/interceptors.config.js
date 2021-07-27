@@ -5,7 +5,7 @@ export default {
         success(context, response) {
             const { status, data } = response;
             res.status(status);
-            return { data };
+            return data;
         },
         error(context, error) {
             if(res) {
